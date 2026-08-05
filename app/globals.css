@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f4efe4;
+  --cream-2: #ece5d5;
+  --ink: #1d1912;
+  --ink-soft: #423b30;
+  --moss: #57624a;
+  --clay: #9c6b4f;
+  --line: rgba(29, 25, 18, 0.14);
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,.35), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,.03), transparent 55%),
+    var(--cream);
+
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  opacity: .08;
+  mix-blend-mode: multiply;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+
+  background-size: 250px 250px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink);
+}
+
+/* Torn paper mask */
+.torn-mask {
+  clip-path: polygon(
+    2% 6%, 9% 2%, 17% 5%, 24% 1%, 33% 4%, 41% 0%, 50% 3%, 58% 0%,
+    67% 4%, 76% 1%, 85% 5%, 93% 2%, 100% 7%,
+    98% 18%, 100% 30%, 97% 41%, 100% 53%, 98% 65%, 100% 76%, 97% 88%, 100% 96%,
+    91% 99%, 83% 96%, 74% 100%, 65% 97%, 56% 100%, 47% 96%, 38% 100%, 29% 97%,
+    20% 100%, 11% 96%, 3% 99%,
+    5% 88%, 2% 76%, 5% 65%, 1% 53%, 4% 41%, 0% 30%, 3% 18%
+  );
+}
+
+.grain {
+  position: relative;
+}
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+
+/* skill */
+
+
