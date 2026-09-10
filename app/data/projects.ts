@@ -366,7 +366,7 @@ export const projects: Project[] = [
   slug: "multi-industry-erp-system",
   title: "Multi-Industry Enterprise ERP & POS System",
   subtitle: "Full-Stack Modular ERP with Multi-Branch POS, Inventory & Workforce Management",
-  image: "/image3.png",
+  image: "/erp.png",
   github: "https://github.com/misriyaa/erp-intern.git",
   demo: "https://github.com/misriyaa/erp-intern.git",
   overview:
@@ -418,7 +418,7 @@ export const projects: Project[] = [
   slug: "selfmony-personal-finance-tracker",
   title: "SelfMony — Personal Finance Tracker",
   subtitle: "Minimalist Personal Finance & Expense Budgeting Application",
-  image: "/image2.png",
+  image: "/self.png",
   github: "https://github.com/Shamil-2k7/selfmony",
   demo: "https://selfmony.vercel.app/",
   overview:
