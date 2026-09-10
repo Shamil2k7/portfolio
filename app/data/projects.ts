@@ -366,7 +366,7 @@ export const projects: Project[] = [
   slug: "multi-industry-erp-system",
   title: "Multi-Industry Enterprise ERP & POS System",
   subtitle: "Full-Stack Modular ERP with Multi-Branch POS, Inventory & Workforce Management",
-  image: "/erp.jpng",
+  image: "/erp.jpeg",
   github: "https://github.com/misriyaa/erp-intern.git",
   demo: "https://github.com/misriyaa/erp-intern.git",
   overview:
