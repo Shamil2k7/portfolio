@@ -27,8 +27,8 @@ export const projects: Project[] = [
   title: "Maison Kin — Interior Architecture",
   subtitle: "AI-Enhanced Spatial Design & Architectural Concept Studio",
   type: "ai",
-  image: "/image3.png",
-  github: "https://github.com/Shamil2k7/interior-designs",
+  image: "/interor.png",
+  github: "https://github.com/Shamil2k7/Interior-Designs.git",
   demo: "https://interior-designs-iota.vercel.app/",
   overview:
     "Maison Kin is an editorial interior architecture and spatial design studio platform that merges architectural precision with generative conceptualization. Featuring full architectural case studies, multi-phase design methodology workflows, interactive project carousels, an editorial journal on architectural philosophy, and client consultation bookings.",
