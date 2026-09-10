@@ -5,7 +5,7 @@ export default function Nav() {
         Shamil K
       </a>
       <nav className="flex items-center gap-6 md:gap-10 text-sm text-[var(--cream)]">
-        <a href="/projects" className="hover:opacity-60 transition-opacity">
+        <a href="#projects" className="hover:opacity-60 transition-opacity">
           Work<sup className="ml-0.5 text-[10px]"></sup>
         </a>
         

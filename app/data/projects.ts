@@ -1,128 +1,233 @@
-export const projects = [
-  
-{
-  slug: "harvestly",
-  title: "Harvestly",
-  subtitle: "Modern Full-Stack Grocery & Fresh Produce Marketplace",
+export interface Project {
+  slug: string;
+  title: string;
+  subtitle: string;
+  type?: "ai";
+  image: string;
+  github: string;
+  demo: string;
+  overview?: string;
+  challenge?: string;
+  solution?: string;
+  features?: string[];
+  tech: string[];
+  year?: string;
+  role?: string;
+  client?: string;
+  duration?: string;
+  status?: string;
+  color?: string;
+  results?: string[];
+  gallery?: string[];
+}
 
-  image: "/image3.png",
+export const projects: Project[] = [
+  {
+  slug: "akm-lms-learning-platform",
 
-  github: "https://github.com/misriyaa/FreshDirect.git",
-  demo: "https://fresh-direct-iota.vercel.app/",
+  title: "AKM LMS — Learning Platform",
 
-  overview:
-    "Harvestly is a modern full-stack e-commerce platform designed for selling fresh fruits, vegetables, and grocery products. The application provides a seamless shopping experience with responsive UI, secure authentication, dynamic product management, shopping cart functionality, and a complete admin dashboard for managing products, categories, banners, orders, and customers.",
-
-  challenge:
-    "Building a scalable grocery marketplace required handling secure user authentication, efficient product management, responsive shopping experiences, image uploads, order tracking, and role-based administration while maintaining excellent performance across desktop and mobile devices.",
-
-  solution:
-    "The platform was developed using the MERN stack with a modular architecture. JWT authentication secures user sessions, MongoDB efficiently manages product and order data, Cloudinary handles optimized image storage, and the responsive React frontend delivers a fast, intuitive shopping experience. The admin dashboard enables complete control over inventory, orders, users, and promotional content.",
-
-  features: [
-    "JWT User Authentication & Authorization",
-    "Responsive Modern UI",
-    "Product Search & Category Filtering",
-    "Shopping Cart Management",
-    "Wishlist Functionality",
-    "Secure Checkout Flow",
-    "Order Management",
-    "Admin Dashboard",
-    "Product CRUD Operations",
-    "Category Management",
-    "Banner Management",
-    "Customer Management",
-    "Image Upload with Cloudinary",
-    "Mobile Friendly Design",
-    "REST API Architecture"
-  ],
-
-  tech: [
-    "React",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Mongoose",
-    "JWT",
-    "Cloudinary",
-    "Axios",
-    "CSS",
-    "REST API"
-  ]
-},
-{
-  slug: "itech-computer-center",
-
-  title: "ITech Computer Center",
-
-  subtitle: "Modern Educational Institute Website",
-
+  subtitle: "Modern Learning Management System for Structured, Self-Paced Courses",
+  type: "ai",
   image: "/image1.png",
 
-  github: "https://github.com/Shamil2k7/your-repository",
+  github: "https://github.com/Shamil2k7/akm-lms",
 
   demo: "https://i-tceh-computer-center.vercel.app/",
 
   overview:
-    "ITech Computer Center is a modern educational website designed for a computer training institute. The platform showcases courses, admissions, faculty, facilities, student achievements, contact information, and online enquiry features through a clean and responsive interface. The project focuses on providing an engaging digital experience for students while helping the institute promote its programs online.",
+    "AKM LMS is a full-featured, modern learning management system engineered for structured, self-paced education. The platform enables students to explore handpicked featured courses, track lesson completion automatically, browse instructor curriculums, and interact with course materials across desktop and mobile devices. Built with dark/light mode theming, streamlined student registration, and interactive learning progress dashboards.",
 
   challenge:
-    "The goal was to create a professional educational website that presents course information in a clear and attractive way while maintaining excellent performance across desktop, tablet, and mobile devices. The interface needed to be modern, easy to navigate, and visually engaging for prospective students.",
+    "Architecting an intuitive and responsive e-learning platform capable of dynamic course catalog browsing, automated student progress tracking, smooth theme switching, and seamless authentication states while maintaining high performance and accessibility.",
 
   solution:
-    "The website was built with React and modern frontend technologies to deliver a fast, responsive, and user-friendly experience. Smooth animations, reusable components, responsive layouts, and optimized images create a professional online presence while making course information easily accessible.",
+    "Developed using Next.js App Router, React, TypeScript, and Tailwind CSS with TanStack Query for optimal server state management. Engineered responsive course showcase grids, an automated lesson tracker, testimonial reviews, dynamic FAQ accordions, and an integrated student contact pipeline.",
 
   features: [
-    "Modern Landing Page",
-    "Course Showcase",
-    "About Institute Section",
-    "Faculty Information",
-    "Admission Information",
-    "Student Testimonials",
-    "Gallery Section",
-    "Contact & Enquiry Form",
-    "Responsive Mobile Design",
-    "Smooth Scroll Animations",
-    "Interactive UI Components",
-    "SEO Friendly Structure"
+    "Course Catalog & Categorization (Featured, Popular, Latest)",
+    "Automated Lesson & Course Progress Tracking (01/12 Tracker)",
+    "Student Authentication & Account Registration Flow",
+    "Light & Dark Theme Toggle System",
+    "Curriculum & Instructor Team Showcase",
+    "Student Testimonials & Review Section",
+    "Interactive FAQ Accordion",
+    "Direct Student Enquiry & Contact Form",
+    "TanStack Query Data Fetching & Caching",
+    "Mobile-Optimized Responsive Layout"
   ],
 
   tech: [
+    "Next.js",
     "React",
-    "JavaScript",
-    "CSS3",
-    "Framer Motion",
-    "React Router",
-    "Responsive Design"
+    "TypeScript",
+    "Tailwind CSS",
+    "TanStack Query",
+    "Lucide Icons",
+    "REST API"
   ],
 
-  year: "2025",
+  year: "2026",
 
-  role: "Frontend Developer",
+  role: "Full Stack Developer",
 
-  client: "Personal Project",
+  client: "AKM Learning Systems",
 
-  duration: "2 Weeks",
+  duration: "1 Month",
 
   status: "Completed",
 
   color: "#2563EB",
 
   results: [
-    "Responsive design across all devices",
-    "Fast loading and optimized performance",
-    "Modern educational website interface",
-    "Reusable component architecture",
-    "Smooth user experience with animations"
-  ],
-
-  gallery: [
-    "/projects/itech/1.png",
-    "/projects/itech/2.png",
-    "/projects/itech/3.png",
-    "/projects/itech/4.png"
+    "Production-deployed LMS platform with self-paced course exploration",
+    "Automatic lesson completion and progress visualization",
+    "Optimized server-side rendering and client caching using TanStack Query",
+    "Smooth dark/light mode responsive user interface"
   ]
 },
+
+{
+  slug: "ideal-weddings",
+  title: "Ideal Weddings",
+  subtitle: "Cinematic Wedding Photography & Film Production Platform",
+  image: "/image2.png",
+  github: "https://github.com/Shamil2k7/ideal-wedding",
+  demo: "https://ideal-wedding.vercel.app/",
+  overview:
+    "Ideal Weddings is a cinematic wedding photography and film production platform crafted for luxury destination weddings and editorial storytelling. The platform showcases destination portfolios across Kerala, Santorini, and Udaipur, interactive masonry galleries, curated wedding stories, tiered package pricing, client testimonials, and consultation booking.",
+  challenge:
+    "Designing a high-performance visual portfolio capable of presenting high-resolution photography and cinematic video showcases with fluid masonry layouts, dark/light editorial theming, smooth scroll animations, and fast loading speeds without compromising imagery fidelity.",
+  solution:
+    "Engineered using Next.js App Router, React, TypeScript, and Tailwind CSS with custom smooth animations and dark mode support via localStorage. Built an interactive categorized portfolio grid, client story showcases, transparent pricing calculators, and a consultation contact flow.",
+  features: [
+    "Cinematic Photography & Film Showcase",
+    "Interactive Filterable Portfolio Masonry Gallery",
+    "Real Wedding Stories & Narrative Storytelling",
+    "Editorial Dark & Light Mode Theme Toggle",
+    "Package Pricing Matrix (Essential, Premium, Luxury)",
+    "Client Testimonials & Verified Star Reviews",
+    "Destination Wedding & Travel Showcase",
+    "Consultation Booking & Enquiry Pipeline",
+    "Next.js Turbopack Performance Optimization",
+    "Responsive Multi-Device Editorial Layout"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Lucide Icons",
+    "Turbopack"
+  ],
+  year: "2026",
+  role: "Frontend / Creative Developer",
+  client: "Ideal Weddings",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#D4AF37",
+  results: [
+    "High-impact luxury visual design with editorial typography",
+    "Responsive masonry portfolio with smooth category filtering",
+    "Seamless dark and light mode theme persistence",
+    "Fast initial page load with optimized image preloading"
+  ]
+},
+{
+  slug: "hso-product-sales-stock-erp",
+  title: "HSO Product Sales & Stock ERP",
+  subtitle: "Production-Ready Inventory ERP & Sales POS Management System",
+  type: "ai",
+  image: "/hso.png",
+  github: "https://github.com/Shamil2k7/HSO-system-.git",
+  demo: "https://hso-system-s5jf.vercel.app/login",
+  overview:
+    "HSO (Home Shop) is a comprehensive enterprise resource planning (ERP) and point-of-sale (POS) platform built for managing inventory workflows, product sales, and real-time stock pipelines. Designed with role-based administration, automated ledger tracking, POS transactions, and intuitive analytics for retail operations.",
+  challenge:
+    "Developing a reliable, real-time inventory management engine that seamlessly synchronizes product stock levels, processes POS transactions, supports multi-user role authentication, and delivers instant sales insights while preventing stock discrepancies and latency.",
+  solution:
+    "Built a production-grade full-stack ERP using Next.js Turbopack, React, TypeScript, and Tailwind CSS. Implemented phone and password authentication with demo credential autofill, an integrated POS billing system, live inventory ledger tracking, dynamic toast alerts, and responsive metrics dashboards.",
+  features: [
+    "Inventory ERP & Stock Level Synchronization",
+    "Point of Sale (POS) & Sales Pipeline Management",
+    "Secure Phone & Password Authentication Flow",
+    "Demo Credentials Autofill System",
+    "Real-Time Stock Alerts & Discrepancy Tracking",
+    "Product Catalog CRUD & Category Sorting",
+    "Sales Performance Analytics & Ledger Reports",
+    "Order Management & Invoice Generation",
+    "Responsive Multi-Device Admin Dashboard",
+    "Modular Toast Notification System"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "REST API",
+    "Lucide Icons",
+    "Turbopack"
+  ],
+  year: "2026",
+  role: "Full Stack Developer",
+  client: "Home Shop (HSO)",
+  duration: "3 Months",
+  status: "Completed",
+  color: "#4F46E5",
+  results: [
+    "End-to-end POS and stock pipeline synchronization",
+    "Streamlined retail operations with automated inventory tracking",
+    "Fast, responsive dashboard built with Next.js Turbopack",
+    "Secure role-based authentication and demo access flow"
+  ]
+},
+{
+  slug: "kfc-clone-web-app",
+  title: "KFC Online Ordering Clone",
+  subtitle: "Fast-Food E-Commerce & Interactive Menu Ordering Platform",
+  image: "/kfc.png",
+  github: "https://github.com/Shamil2k7/KFC-clone.git",
+  demo: "https://shamil2k7.github.io/KFC-clone/",
+  overview:
+    "A responsive web application replicating the KFC digital dining and online ordering experience. The platform features dynamic menu category browsing (Epic Buckets, Box Meals, Variety Buckets, Burgers, Snacks, and Beverages), promotional deal showcases with coupon discounts, interactive shopping cart management, and user registration.",
+  challenge:
+    "Accurately recreating KFC's signature responsive brand interface with smooth category tab transitions, interactive item quantity calculation, dynamic deal cards, and form validation using vanilla JavaScript without external UI frameworks.",
+  solution:
+    "Engineered using semantic HTML5, modern CSS3 with custom animations, and modular vanilla JavaScript (ES6+). Implemented dynamic menu category routing, real-time cart state management, promotional coupon logic, and responsive layouts across mobile and desktop devices.",
+  features: [
+    "Interactive Menu Categorization (Buckets, Box Meals, Burgers, Veg)",
+    "Promotional Deals & Special Offer Voucher Showcase",
+    "Real-Time Cart Counter & Price Calculation",
+    "User Registration & Account Authentication Flow",
+    "Epic Bucket of the Day & Golden Edition Features",
+    "Responsive Mobile-First Fast-Food UI",
+    "Smooth Scroll & Section Navigation",
+    "Brand-Accurate Styling & High-Res Food Asset Showcase"
+  ],
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "Responsive Design",
+    "DOM Manipulation",
+    "Git & GitHub Pages"
+  ],
+  year: "2025",
+  role: "Frontend Developer",
+  client: "Personal Project",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#E4002B",
+  results: [
+    "Faithful replication of the iconic KFC digital ordering experience",
+    "Lightweight, fast-loading vanilla JavaScript architecture",
+    "Seamless multi-device responsiveness and mobile touch navigation",
+    "Hosted live on GitHub Pages"
+  ]
+},
+
 {
   slug: "ecommerce-platform",
 
@@ -208,6 +313,53 @@ export const projects = [
     "/projects/ecommerce/3.png",
     "/projects/ecommerce/4.png",
     "/projects/ecommerce/5.png"
+  ]
+},
+{
+  slug: "zelord-travels",
+  title: "Zelord Travel",
+  subtitle: "Premium Bus Charter & Intercity Travel Booking Platform",
+  image: "/zedlord.png",
+  github: "https://github.com/Shamil2k7/zelord-travels",
+  demo: "https://zelord-travels.vercel.app/",
+  overview:
+    "Zelord Travel (Zedlord) is a luxury bus charter and intercity travel showcase platform crafted for premium passenger transit. The website presents luxury fleet specifications (45-seater coaches, full AC, sound systems, and 4K displays), scheduled day/night routes, embedded video reels of travel experiences, an image gallery, and instant WhatsApp booking integration.",
+  challenge:
+    "Building an engaging travel booking showcase with embedded short-form video reels, interactive fleet specification displays, seamless responsive navigation, and direct lead generation pipelines via WhatsApp and social channels without compromising page speed.",
+  solution:
+    "Engineered with Next.js App Router, React, JavaScript, and modern CSS styling. Implemented responsive video reel players, animated route showcases, direct WhatsApp booking CTA triggers, and mobile-friendly navigation.",
+  features: [
+    "Premium Bus Charter & Route Showcase",
+    "Fleet Amenities Matrix (45 Luxury Seats, Full AC, 4K Displays)",
+    "Embedded Travel Moments Video Gallery & Reels",
+    "Curated Travel Moments Image Showcase",
+    "Direct 1-Click WhatsApp Booking Integration",
+    "Scheduled Day & Night European Intercity Routes",
+    "Responsive Mobile Navigation Drawer",
+    "Barlow & Barlow Condensed Custom Typography",
+    "Social Media & Instagram Community Integration",
+    "Optimized Asset Preloading for High-Speed Browsing"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "CSS Modules",
+    "HTML5 Video",
+    "REST API"
+  ],
+  year: "2026",
+  role: "Frontend Developer",
+  client: "Zelord Travels",
+  duration: "2 Weeks",
+  status: "Completed",
+  color: "#D4AF37",
+  results: [
+    "High-conversion travel charter landing experience",
+    "Instant booking connection directly via WhatsApp API",
+    "Smooth multi-device media playback with embedded reels",
+    "Distinctive bold travel editorial typography and visual theme"
   ]
 }
 ];
