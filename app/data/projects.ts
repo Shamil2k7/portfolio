@@ -22,6 +22,53 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+{
+  slug: "maison-kin-interior-designs",
+  title: "Maison Kin — Interior Architecture",
+  subtitle: "AI-Enhanced Spatial Design & Architectural Concept Studio",
+  type: "ai",
+  image: "/image3.png",
+  github: "https://github.com/Shamil2k7/interior-designs",
+  demo: "https://interior-designs-iota.vercel.app/",
+  overview:
+    "Maison Kin is an editorial interior architecture and spatial design studio platform that merges architectural precision with generative conceptualization. Featuring full architectural case studies, multi-phase design methodology workflows, interactive project carousels, an editorial journal on architectural philosophy, and client consultation bookings.",
+  challenge:
+    "Developing a luxury, high-performance interior architecture portfolio with dynamic hero slider transitions, bespoke loading animations, detailed case study routing, and responsive multi-device navigation while honoring quiet luxury aesthetics and refined typography.",
+  solution:
+    "Engineered with modern React, JavaScript, Vite, Tailwind CSS, and Framer Motion. Built interactive architectural project showcases, dynamic category filters (Residential, Penthouse, Commercial), a five-phase design journey methodology, and an integrated commission inquiry pipeline.",
+  features: [
+    "Interactive Hero Slide Showcase with Spatial Categories",
+    "Comprehensive Project Case Studies with Architectural Specs",
+    "Five-Phase Design Journey Methodology Walkthrough",
+    "Specialized Practice & Design Services Breakdown",
+    "Curated Editorial Architecture Journal with Reading Times",
+    "Direct Commission Inquiry & Consultation Booking Flow",
+    "Fluid Framer Motion Page & Loading Screen Transitions",
+    "High-Resolution Imagery with Aspect-Ratio Optimization",
+    "Responsive Mobile Navigation Drawer & Studio Aesthetics"
+  ],
+  tech: [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Lucide Icons",
+    "Vite",
+    "REST API"
+  ],
+  year: "2026",
+  role: "Frontend / Creative Developer",
+  client: "Maison Kin Studio",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#8B7355",
+  results: [
+    "Luxury editorial web experience with international architectural styling",
+    "Smooth 60fps animations and fluid slider transitions",
+    "Clear five-phase client consultation and onboarding funnel",
+    "Seamless responsive display across desktop, tablet, and mobile"
+  ]
+},
   {
   slug: "akm-lms-learning-platform",
 
