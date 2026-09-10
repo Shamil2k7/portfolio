@@ -415,6 +415,56 @@ export const projects: Project[] = [
   ]
 },
 {
+  slug: "selfmony-personal-finance-tracker",
+  title: "SelfMony — Personal Finance Tracker",
+  subtitle: "Minimalist Personal Finance & Expense Budgeting Application",
+  image: "/image2.png",
+  github: "https://github.com/Shamil-2k7/selfmony",
+  demo: "https://selfmony.vercel.app/",
+  overview:
+    "SelfMony is a minimalist, modern personal finance and expense budgeting application engineered to give users clear control over their financial health. Designed with a sleek monochrome aesthetic, the platform features real-time wallet balances, automated income and expense categorization, weekly and monthly spending trends, financial to-do tracking, and visual analytics for informed budgeting decisions.",
+  challenge:
+    "Designing a frictionless, distraction-free expense tracking experience that makes daily financial logging effortless on mobile and desktop, while providing actionable analytics, real-time balance calculations, and secure JWT-based user authentication without bloated UI overhead.",
+  solution:
+    "Built a full-stack financial application utilizing Next.js (App Router), React 19, TypeScript, and Tailwind CSS on the frontend, paired with an Express and Node.js REST API backend connected to MongoDB via Mongoose. Integrated weekly/monthly category breakdowns, quick transaction logging drawers, dynamic analytics views, and mobile-first bottom navigation.",
+  features: [
+    "Real-Time Total Balance & Net Worth Tracking",
+    "Daily, Weekly & Monthly Expense Categorization",
+    "Income Logging & Cash Flow Management",
+    "Interactive Spending Analytics & Visual Charts",
+    "Financial To-Do Lists & Budget Goal Planning",
+    "Secure JWT Authentication & Password Encryption",
+    "Minimalist High-Contrast Dark Theme UI",
+    "Responsive Mobile-First Bottom Navigation Bar",
+    "Recent Transaction History & Activity Feeds",
+    "RESTful API Backend with Mongoose Data Modeling"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "Tailwind CSS",
+    "JWT",
+    "REST API"
+  ],
+  year: "2026",
+  role: "Full Stack Developer",
+  client: "Personal Project",
+  duration: "1 Month",
+  status: "Completed",
+  color: "#10B981",
+  results: [
+    "Streamlined personal budgeting with instant expense and income logging",
+    "Comprehensive monthly and weekly spending visibility",
+    "Mobile-first responsive design with intuitive bottom navigation",
+    "Secure full-stack MERN + Next.js architecture deployed live"
+  ]
+},
+{
   slug: "zelord-travels",
   title: "Zelord Travel",
   subtitle: "Premium Bus Charter & Intercity Travel Booking Platform",
