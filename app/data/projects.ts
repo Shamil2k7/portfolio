@@ -363,6 +363,58 @@ export const projects: Project[] = [
   ]
 },
 {
+  slug: "multi-industry-erp-system",
+  title: "Multi-Industry Enterprise ERP & POS System",
+  subtitle: "Full-Stack Modular ERP with Multi-Branch POS, Inventory & Workforce Management",
+  image: "/image3.png",
+  github: "https://github.com/misriyaa/erp-intern.git",
+  demo: "https://github.com/misriyaa/erp-intern.git",
+  overview:
+    "An enterprise-grade, multi-tenant Resource Planning (ERP) and Point of Sale (POS) system engineered for high-scale business operations across diverse industries (Retail, Restaurant, Textile, Medical, Laundry, and Salon). Featuring real-time inventory tracking, warehouse stock transfers, automated invoice and barcode generation, employee RBAC permissions, WebSocket notifications, and comprehensive financial audit reporting.",
+  challenge:
+    "Engineering a modular, high-throughput enterprise platform capable of coordinating multi-branch sales pipelines, real-time inventory synchronization, barcode scanning, industry-specific workflows (such as restaurant kitchen display systems and textile batch tracking), and granular role-based permissions without database bottlenecks.",
+  solution:
+    "Architected with Next.js 16, React 19, Redux Toolkit, and Tailwind CSS on the frontend, paired with an Express 5 and Prisma ORM backend powered by PostgreSQL and Redis. Integrated real-time WebSockets with Socket.io, barcode & QR scanning via @zxing, automated PDF invoice and Excel export pipelines, and robust JWT-based multi-tier role authorization.",
+  features: [
+    "Multi-Industry Adaptability (Retail, Restaurant & KDS, Textile, Medical, Salon)",
+    "Point of Sale (POS) Terminal with Barcode & QR Code Scanner",
+    "Real-Time Inventory, Warehouse Transfers & Wastage Control",
+    "Multi-Branch & Multi-Tenant Company Management",
+    "Role-Based Access Control (RBAC) & Granular Permissions",
+    "Automated PDF Invoices, Receipts & Excel Report Export",
+    "Live Order & Event Notifications via WebSockets (Socket.io)",
+    "Employee Attendance, Department & Workforce Directory",
+    "Purchase Orders, Supplier Catalog & Customer CRM",
+    "Financial Analytics, Expense Tracking & Audit Logs"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Prisma ORM",
+    "Redis",
+    "Socket.io",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "JWT",
+    "REST API"
+  ],
+  year: "2026",
+  role: "Full Stack Developer",
+  client: "Enterprise Client",
+  duration: "4 Months",
+  status: "Completed",
+  color: "#0284C7",
+  results: [
+    "Unified multi-branch business operations under a single modular architecture",
+    "Sub-second POS transaction processing with hardware barcode integration",
+    "Zero-latency inventory synchronization across warehouses using Redis & WebSockets",
+    "Comprehensive enterprise audit trails and automated financial reporting"
+  ]
+},
+{
   slug: "zelord-travels",
   title: "Zelord Travel",
   subtitle: "Premium Bus Charter & Intercity Travel Booking Platform",
