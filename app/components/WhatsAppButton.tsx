@@ -4,14 +4,15 @@ import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
-  const phone = "919876543210"; // Replace with your WhatsApp number
+  const phone = "919744844200";
+  const defaultMessage = encodeURIComponent("Hi Shamil, I saw your portfolio and would like to discuss a project!");
 
   return (
     <motion.a
-      href={`https://wa.me/${phone}`}
+      href={`https://wa.me/${phone}?text=${defaultMessage}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
+      aria-label="Chat with Shamil on WhatsApp"
       initial={{ scale: 0, opacity: 0 }}
       animate={{
         scale: 1,
@@ -38,7 +39,8 @@ export default function WhatsAppButton() {
       whileTap={{
         scale: 0.9,
       }}
-      className="fixed bottom-8 right-8 z-[999] flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl"
+      className="fixed bottom-8 right-8 z-[999] flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#20ba5a] transition-colors"
+      title="Chat on WhatsApp (+91 9744844200)"
     >
       <FaWhatsapp className="text-4xl" />
 

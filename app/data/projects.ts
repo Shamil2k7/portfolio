@@ -22,60 +22,113 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-{
-  slug: "maison-kin-interior-designs",
-  title: "Maison Kin — Interior Architecture",
-  subtitle: "AI-Enhanced Spatial Design & Architectural Concept Studio",
-  type: "ai",
-  image: "/interor.png",
-  github: "https://github.com/Shamil2k7/Interior-Designs.git",
-  demo: "https://interior-designs-iota.vercel.app/",
+  {
+  slug: "multi-industry-erp-system",
+  title: "Multi-Industry Enterprise ERP & POS System",
+  subtitle: "Full-Stack Modular ERP with Multi-Branch POS, Inventory & Workforce Management",
+  image: "/erp.jpeg",
+  github: "https://github.com/misriyaa/erp-intern.git",
+  demo: "https://github.com/misriyaa/erp-intern.git",
   overview:
-    "Maison Kin is an editorial interior architecture and spatial design studio platform that merges architectural precision with generative conceptualization. Featuring full architectural case studies, multi-phase design methodology workflows, interactive project carousels, an editorial journal on architectural philosophy, and client consultation bookings.",
+    "An enterprise-grade, multi-tenant Resource Planning (ERP) and Point of Sale (POS) system engineered for high-scale business operations across diverse industries (Retail, Restaurant, Textile, Medical, Laundry, and Salon). Featuring real-time inventory tracking, warehouse stock transfers, automated invoice and barcode generation, employee RBAC permissions, WebSocket notifications, and comprehensive financial audit reporting.",
   challenge:
-    "Developing a luxury, high-performance interior architecture portfolio with dynamic hero slider transitions, bespoke loading animations, detailed case study routing, and responsive multi-device navigation while honoring quiet luxury aesthetics and refined typography.",
+    "Engineering a modular, high-throughput enterprise platform capable of coordinating multi-branch sales pipelines, real-time inventory synchronization, barcode scanning, industry-specific workflows (such as restaurant kitchen display systems and textile batch tracking), and granular role-based permissions without database bottlenecks.",
   solution:
-    "Engineered with modern React, JavaScript, Vite, Tailwind CSS, and Framer Motion. Built interactive architectural project showcases, dynamic category filters (Residential, Penthouse, Commercial), a five-phase design journey methodology, and an integrated commission inquiry pipeline.",
+    "Architected with Next.js 16, React 19, Redux Toolkit, and Tailwind CSS on the frontend, paired with an Express 5 and Prisma ORM backend powered by PostgreSQL and Redis. Integrated real-time WebSockets with Socket.io, barcode & QR scanning via @zxing, automated PDF invoice and Excel export pipelines, and robust JWT-based multi-tier role authorization.",
   features: [
-    "Interactive Hero Slide Showcase with Spatial Categories",
-    "Comprehensive Project Case Studies with Architectural Specs",
-    "Five-Phase Design Journey Methodology Walkthrough",
-    "Specialized Practice & Design Services Breakdown",
-    "Curated Editorial Architecture Journal with Reading Times",
-    "Direct Commission Inquiry & Consultation Booking Flow",
-    "Fluid Framer Motion Page & Loading Screen Transitions",
-    "High-Resolution Imagery with Aspect-Ratio Optimization",
-    "Responsive Mobile Navigation Drawer & Studio Aesthetics"
+    "Multi-Industry Adaptability (Retail, Restaurant & KDS, Textile, Medical, Salon)",
+    "Point of Sale (POS) Terminal with Barcode & QR Code Scanner",
+    "Real-Time Inventory, Warehouse Transfers & Wastage Control",
+    "Multi-Branch & Multi-Tenant Company Management",
+    "Role-Based Access Control (RBAC) & Granular Permissions",
+    "Automated PDF Invoices, Receipts & Excel Report Export",
+    "Live Order & Event Notifications via WebSockets (Socket.io)",
+    "Employee Attendance, Department & Workforce Directory",
+    "Purchase Orders, Supplier Catalog & Customer CRM",
+    "Financial Analytics, Expense Tracking & Audit Logs"
   ],
   tech: [
+    "Next.js",
     "React",
-    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Prisma ORM",
+    "Redis",
+    "Socket.io",
+    "Redux Toolkit",
     "Tailwind CSS",
-    "Framer Motion",
-    "Lucide Icons",
-    "Vite",
+    "JWT",
     "REST API"
   ],
   year: "2026",
-  role: "Frontend / Creative Developer",
-  client: "Maison Kin Studio",
-  duration: "3 Weeks",
+  role: "Full Stack Developer",
+  client: "Enterprise Client",
+  duration: "4 Months",
   status: "Completed",
-  color: "#8B7355",
+  color: "#0284C7",
   results: [
-    "Luxury editorial web experience with international architectural styling",
-    "Smooth 60fps animations and fluid slider transitions",
-    "Clear five-phase client consultation and onboarding funnel",
-    "Seamless responsive display across desktop, tablet, and mobile"
+    "Unified multi-branch business operations under a single modular architecture",
+    "Sub-second POS transaction processing with hardware barcode integration",
+    "Zero-latency inventory synchronization across warehouses using Redis & WebSockets",
+    "Comprehensive enterprise audit trails and automated financial reporting"
   ]
 },
-  {
+{
+  slug: "hso-product-sales-stock-erp",
+  title: "HSO Product Sales & Stock ERP",
+  subtitle: "Production-Ready Inventory ERP & Sales POS Management System",
+  image: "/hso.png",
+  github: "https://github.com/Shamil2k7/HSO-system-.git",
+  demo: "https://hso-system-s5jf.vercel.app/login",
+  overview:
+    "HSO (Home Shop) is a comprehensive enterprise resource planning (ERP) and point-of-sale (POS) platform built for managing inventory workflows, product sales, and real-time stock pipelines. Designed with role-based administration, automated ledger tracking, POS transactions, and intuitive analytics for retail operations.",
+  challenge:
+    "Developing a reliable, real-time inventory management engine that seamlessly synchronizes product stock levels, processes POS transactions, supports multi-user role authentication, and delivers instant sales insights while preventing stock discrepancies and latency.",
+  solution:
+    "Built a production-grade full-stack ERP using Next.js Turbopack, React, TypeScript, and Tailwind CSS. Implemented phone and password authentication with demo credential autofill, an integrated POS billing system, live inventory ledger tracking, dynamic toast alerts, and responsive metrics dashboards.",
+  features: [
+    "Inventory ERP & Stock Level Synchronization",
+    "Point of Sale (POS) & Sales Pipeline Management",
+    "Secure Phone & Password Authentication Flow",
+    "Demo Credentials Autofill System",
+    "Real-Time Stock Alerts & Discrepancy Tracking",
+    "Product Catalog CRUD & Category Sorting",
+    "Sales Performance Analytics & Ledger Reports",
+    "Order Management & Invoice Generation",
+    "Responsive Multi-Device Admin Dashboard",
+    "Modular Toast Notification System"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "REST API",
+    "Lucide Icons",
+    "Turbopack"
+  ],
+  year: "2026",
+  role: "Full Stack Developer",
+  client: "Home Shop (HSO)",
+  duration: "3 Months",
+  status: "Completed",
+  color: "#4F46E5",
+  results: [
+    "End-to-end POS and stock pipeline synchronization",
+    "Streamlined retail operations with automated inventory tracking",
+    "Fast, responsive dashboard built with Next.js Turbopack",
+    "Secure role-based authentication and demo access flow"
+  ]
+},
+
+{
   slug: "akm-lms-learning-platform",
 
   title: "AKM LMS — Learning Platform",
 
   subtitle: "Modern Learning Management System for Structured, Self-Paced Courses",
-  type: "ai",
   image: "/image1.png",
 
   github: "https://github.com/Shamil2k7/akm-lms",
@@ -133,148 +186,6 @@ export const projects: Project[] = [
     "Smooth dark/light mode responsive user interface"
   ]
 },
-
-{
-  slug: "ideal-weddings",
-  title: "Ideal Weddings",
-  subtitle: "Cinematic Wedding Photography & Film Production Platform",
-  image: "/image2.png",
-  github: "https://github.com/Shamil2k7/ideal-wedding",
-  demo: "https://ideal-wedding.vercel.app/",
-  overview:
-    "Ideal Weddings is a cinematic wedding photography and film production platform crafted for luxury destination weddings and editorial storytelling. The platform showcases destination portfolios across Kerala, Santorini, and Udaipur, interactive masonry galleries, curated wedding stories, tiered package pricing, client testimonials, and consultation booking.",
-  challenge:
-    "Designing a high-performance visual portfolio capable of presenting high-resolution photography and cinematic video showcases with fluid masonry layouts, dark/light editorial theming, smooth scroll animations, and fast loading speeds without compromising imagery fidelity.",
-  solution:
-    "Engineered using Next.js App Router, React, TypeScript, and Tailwind CSS with custom smooth animations and dark mode support via localStorage. Built an interactive categorized portfolio grid, client story showcases, transparent pricing calculators, and a consultation contact flow.",
-  features: [
-    "Cinematic Photography & Film Showcase",
-    "Interactive Filterable Portfolio Masonry Gallery",
-    "Real Wedding Stories & Narrative Storytelling",
-    "Editorial Dark & Light Mode Theme Toggle",
-    "Package Pricing Matrix (Essential, Premium, Luxury)",
-    "Client Testimonials & Verified Star Reviews",
-    "Destination Wedding & Travel Showcase",
-    "Consultation Booking & Enquiry Pipeline",
-    "Next.js Turbopack Performance Optimization",
-    "Responsive Multi-Device Editorial Layout"
-  ],
-  tech: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Framer Motion",
-    "Lucide Icons",
-    "Turbopack"
-  ],
-  year: "2026",
-  role: "Frontend / Creative Developer",
-  client: "Ideal Weddings",
-  duration: "3 Weeks",
-  status: "Completed",
-  color: "#D4AF37",
-  results: [
-    "High-impact luxury visual design with editorial typography",
-    "Responsive masonry portfolio with smooth category filtering",
-    "Seamless dark and light mode theme persistence",
-    "Fast initial page load with optimized image preloading"
-  ]
-},
-{
-  slug: "hso-product-sales-stock-erp",
-  title: "HSO Product Sales & Stock ERP",
-  subtitle: "Production-Ready Inventory ERP & Sales POS Management System",
-  type: "ai",
-  image: "/hso.png",
-  github: "https://github.com/Shamil2k7/HSO-system-.git",
-  demo: "https://hso-system-s5jf.vercel.app/login",
-  overview:
-    "HSO (Home Shop) is a comprehensive enterprise resource planning (ERP) and point-of-sale (POS) platform built for managing inventory workflows, product sales, and real-time stock pipelines. Designed with role-based administration, automated ledger tracking, POS transactions, and intuitive analytics for retail operations.",
-  challenge:
-    "Developing a reliable, real-time inventory management engine that seamlessly synchronizes product stock levels, processes POS transactions, supports multi-user role authentication, and delivers instant sales insights while preventing stock discrepancies and latency.",
-  solution:
-    "Built a production-grade full-stack ERP using Next.js Turbopack, React, TypeScript, and Tailwind CSS. Implemented phone and password authentication with demo credential autofill, an integrated POS billing system, live inventory ledger tracking, dynamic toast alerts, and responsive metrics dashboards.",
-  features: [
-    "Inventory ERP & Stock Level Synchronization",
-    "Point of Sale (POS) & Sales Pipeline Management",
-    "Secure Phone & Password Authentication Flow",
-    "Demo Credentials Autofill System",
-    "Real-Time Stock Alerts & Discrepancy Tracking",
-    "Product Catalog CRUD & Category Sorting",
-    "Sales Performance Analytics & Ledger Reports",
-    "Order Management & Invoice Generation",
-    "Responsive Multi-Device Admin Dashboard",
-    "Modular Toast Notification System"
-  ],
-  tech: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "REST API",
-    "Lucide Icons",
-    "Turbopack"
-  ],
-  year: "2026",
-  role: "Full Stack Developer",
-  client: "Home Shop (HSO)",
-  duration: "3 Months",
-  status: "Completed",
-  color: "#4F46E5",
-  results: [
-    "End-to-end POS and stock pipeline synchronization",
-    "Streamlined retail operations with automated inventory tracking",
-    "Fast, responsive dashboard built with Next.js Turbopack",
-    "Secure role-based authentication and demo access flow"
-  ]
-},
-{
-  slug: "kfc-clone-web-app",
-  title: "KFC Online Ordering Clone",
-  subtitle: "Fast-Food E-Commerce & Interactive Menu Ordering Platform",
-  image: "/kfc.png",
-  github: "https://github.com/Shamil2k7/KFC-clone.git",
-  demo: "https://shamil2k7.github.io/KFC-clone/",
-  overview:
-    "A responsive web application replicating the KFC digital dining and online ordering experience. The platform features dynamic menu category browsing (Epic Buckets, Box Meals, Variety Buckets, Burgers, Snacks, and Beverages), promotional deal showcases with coupon discounts, interactive shopping cart management, and user registration.",
-  challenge:
-    "Accurately recreating KFC's signature responsive brand interface with smooth category tab transitions, interactive item quantity calculation, dynamic deal cards, and form validation using vanilla JavaScript without external UI frameworks.",
-  solution:
-    "Engineered using semantic HTML5, modern CSS3 with custom animations, and modular vanilla JavaScript (ES6+). Implemented dynamic menu category routing, real-time cart state management, promotional coupon logic, and responsive layouts across mobile and desktop devices.",
-  features: [
-    "Interactive Menu Categorization (Buckets, Box Meals, Burgers, Veg)",
-    "Promotional Deals & Special Offer Voucher Showcase",
-    "Real-Time Cart Counter & Price Calculation",
-    "User Registration & Account Authentication Flow",
-    "Epic Bucket of the Day & Golden Edition Features",
-    "Responsive Mobile-First Fast-Food UI",
-    "Smooth Scroll & Section Navigation",
-    "Brand-Accurate Styling & High-Res Food Asset Showcase"
-  ],
-  tech: [
-    "HTML5",
-    "CSS3",
-    "JavaScript (ES6+)",
-    "Responsive Design",
-    "DOM Manipulation",
-    "Git & GitHub Pages"
-  ],
-  year: "2025",
-  role: "Frontend Developer",
-  client: "Personal Project",
-  duration: "3 Weeks",
-  status: "Completed",
-  color: "#E4002B",
-  results: [
-    "Faithful replication of the iconic KFC digital ordering experience",
-    "Lightweight, fast-loading vanilla JavaScript architecture",
-    "Seamless multi-device responsiveness and mobile touch navigation",
-    "Hosted live on GitHub Pages"
-  ]
-},
-
 {
   slug: "ecommerce-platform",
 
@@ -363,58 +274,6 @@ export const projects: Project[] = [
   ]
 },
 {
-  slug: "multi-industry-erp-system",
-  title: "Multi-Industry Enterprise ERP & POS System",
-  subtitle: "Full-Stack Modular ERP with Multi-Branch POS, Inventory & Workforce Management",
-  image: "/erp.jpeg",
-  github: "https://github.com/misriyaa/erp-intern.git",
-  demo: "https://github.com/misriyaa/erp-intern.git",
-  overview:
-    "An enterprise-grade, multi-tenant Resource Planning (ERP) and Point of Sale (POS) system engineered for high-scale business operations across diverse industries (Retail, Restaurant, Textile, Medical, Laundry, and Salon). Featuring real-time inventory tracking, warehouse stock transfers, automated invoice and barcode generation, employee RBAC permissions, WebSocket notifications, and comprehensive financial audit reporting.",
-  challenge:
-    "Engineering a modular, high-throughput enterprise platform capable of coordinating multi-branch sales pipelines, real-time inventory synchronization, barcode scanning, industry-specific workflows (such as restaurant kitchen display systems and textile batch tracking), and granular role-based permissions without database bottlenecks.",
-  solution:
-    "Architected with Next.js 16, React 19, Redux Toolkit, and Tailwind CSS on the frontend, paired with an Express 5 and Prisma ORM backend powered by PostgreSQL and Redis. Integrated real-time WebSockets with Socket.io, barcode & QR scanning via @zxing, automated PDF invoice and Excel export pipelines, and robust JWT-based multi-tier role authorization.",
-  features: [
-    "Multi-Industry Adaptability (Retail, Restaurant & KDS, Textile, Medical, Salon)",
-    "Point of Sale (POS) Terminal with Barcode & QR Code Scanner",
-    "Real-Time Inventory, Warehouse Transfers & Wastage Control",
-    "Multi-Branch & Multi-Tenant Company Management",
-    "Role-Based Access Control (RBAC) & Granular Permissions",
-    "Automated PDF Invoices, Receipts & Excel Report Export",
-    "Live Order & Event Notifications via WebSockets (Socket.io)",
-    "Employee Attendance, Department & Workforce Directory",
-    "Purchase Orders, Supplier Catalog & Customer CRM",
-    "Financial Analytics, Expense Tracking & Audit Logs"
-  ],
-  tech: [
-    "Next.js",
-    "React",
-    "Node.js",
-    "Express.js",
-    "PostgreSQL",
-    "Prisma ORM",
-    "Redis",
-    "Socket.io",
-    "Redux Toolkit",
-    "Tailwind CSS",
-    "JWT",
-    "REST API"
-  ],
-  year: "2026",
-  role: "Full Stack Developer",
-  client: "Enterprise Client",
-  duration: "4 Months",
-  status: "Completed",
-  color: "#0284C7",
-  results: [
-    "Unified multi-branch business operations under a single modular architecture",
-    "Sub-second POS transaction processing with hardware barcode integration",
-    "Zero-latency inventory synchronization across warehouses using Redis & WebSockets",
-    "Comprehensive enterprise audit trails and automated financial reporting"
-  ]
-},
-{
   slug: "selfmony-personal-finance-tracker",
   title: "SelfMony — Personal Finance Tracker",
   subtitle: "Minimalist Personal Finance & Expense Budgeting Application",
@@ -464,6 +323,146 @@ export const projects: Project[] = [
     "Secure full-stack MERN + Next.js architecture deployed live"
   ]
 },
+{
+  slug: "maison-kin-interior-designs",
+  title: "Maison Kin — Interior Architecture",
+  subtitle: "Spatial Architecture & Editorial Concept Studio",
+  image: "/interor.png",
+  github: "https://github.com/Shamil2k7/Interior-Designs.git",
+  demo: "https://interior-designs-iota.vercel.app/",
+  overview:
+    "Maison Kin is an editorial interior architecture and spatial design studio platform that merges architectural precision with generative conceptualization. Featuring full architectural case studies, multi-phase design methodology workflows, interactive project carousels, an editorial journal on architectural philosophy, and client consultation bookings.",
+  challenge:
+    "Developing a luxury, high-performance interior architecture portfolio with dynamic hero slider transitions, bespoke loading animations, detailed case study routing, and responsive multi-device navigation while honoring quiet luxury aesthetics and refined typography.",
+  solution:
+    "Engineered with modern React, JavaScript, Vite, Tailwind CSS, and Framer Motion. Built interactive architectural project showcases, dynamic category filters (Residential, Penthouse, Commercial), a five-phase design journey methodology, and an integrated commission inquiry pipeline.",
+  features: [
+    "Interactive Hero Slide Showcase with Spatial Categories",
+    "Comprehensive Project Case Studies with Architectural Specs",
+    "Five-Phase Design Journey Methodology Walkthrough",
+    "Specialized Practice & Design Services Breakdown",
+    "Curated Editorial Architecture Journal with Reading Times",
+    "Direct Commission Inquiry & Consultation Booking Flow",
+    "Fluid Framer Motion Page & Loading Screen Transitions",
+    "High-Resolution Imagery with Aspect-Ratio Optimization",
+    "Responsive Mobile Navigation Drawer & Studio Aesthetics"
+  ],
+  tech: [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Lucide Icons",
+    "Vite",
+    "REST API"
+  ],
+  year: "2026",
+  role: "Frontend / Creative Developer",
+  client: "Maison Kin Studio",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#8B7355",
+  results: [
+    "Luxury editorial web experience with international architectural styling",
+    "Smooth 60fps animations and fluid slider transitions",
+    "Clear five-phase client consultation and onboarding funnel",
+    "Seamless responsive display across desktop, tablet, and mobile"
+  ]
+},
+
+{
+  slug: "ideal-weddings",
+  title: "Ideal Weddings",
+  subtitle: "Cinematic Wedding Photography & Film Production Platform",
+  image: "/image2.png",
+  github: "https://github.com/Shamil2k7/ideal-wedding",
+  demo: "https://ideal-wedding.vercel.app/",
+  overview:
+    "Ideal Weddings is a cinematic wedding photography and film production platform crafted for luxury destination weddings and editorial storytelling. The platform showcases destination portfolios across Kerala, Santorini, and Udaipur, interactive masonry galleries, curated wedding stories, tiered package pricing, client testimonials, and consultation booking.",
+  challenge:
+    "Designing a high-performance visual portfolio capable of presenting high-resolution photography and cinematic video showcases with fluid masonry layouts, dark/light editorial theming, smooth scroll animations, and fast loading speeds without compromising imagery fidelity.",
+  solution:
+    "Engineered using Next.js App Router, React, TypeScript, and Tailwind CSS with custom smooth animations and dark mode support via localStorage. Built an interactive categorized portfolio grid, client story showcases, transparent pricing calculators, and a consultation contact flow.",
+  features: [
+    "Cinematic Photography & Film Showcase",
+    "Interactive Filterable Portfolio Masonry Gallery",
+    "Real Wedding Stories & Narrative Storytelling",
+    "Editorial Dark & Light Mode Theme Toggle",
+    "Package Pricing Matrix (Essential, Premium, Luxury)",
+    "Client Testimonials & Verified Star Reviews",
+    "Destination Wedding & Travel Showcase",
+    "Consultation Booking & Enquiry Pipeline",
+    "Next.js Turbopack Performance Optimization",
+    "Responsive Multi-Device Editorial Layout"
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Lucide Icons",
+    "Turbopack"
+  ],
+  year: "2026",
+  role: "Frontend / Creative Developer",
+  client: "Ideal Weddings",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#D4AF37",
+  results: [
+    "High-impact luxury visual design with editorial typography",
+    "Responsive masonry portfolio with smooth category filtering",
+    "Seamless dark and light mode theme persistence",
+    "Fast initial page load with optimized image preloading"
+  ]
+},
+
+{
+  slug: "kfc-clone-web-app",
+  title: "KFC Online Ordering Clone",
+  subtitle: "Fast-Food E-Commerce & Interactive Menu Ordering Platform",
+  image: "/kfc.png",
+  github: "https://github.com/Shamil2k7/KFC-clone.git",
+  demo: "https://shamil2k7.github.io/KFC-clone/",
+  overview:
+    "A responsive web application replicating the KFC digital dining and online ordering experience. The platform features dynamic menu category browsing (Epic Buckets, Box Meals, Variety Buckets, Burgers, Snacks, and Beverages), promotional deal showcases with coupon discounts, interactive shopping cart management, and user registration.",
+  challenge:
+    "Accurately recreating KFC's signature responsive brand interface with smooth category tab transitions, interactive item quantity calculation, dynamic deal cards, and form validation using vanilla JavaScript without external UI frameworks.",
+  solution:
+    "Engineered using semantic HTML5, modern CSS3 with custom animations, and modular vanilla JavaScript (ES6+). Implemented dynamic menu category routing, real-time cart state management, promotional coupon logic, and responsive layouts across mobile and desktop devices.",
+  features: [
+    "Interactive Menu Categorization (Buckets, Box Meals, Burgers, Veg)",
+    "Promotional Deals & Special Offer Voucher Showcase",
+    "Real-Time Cart Counter & Price Calculation",
+    "User Registration & Account Authentication Flow",
+    "Epic Bucket of the Day & Golden Edition Features",
+    "Responsive Mobile-First Fast-Food UI",
+    "Smooth Scroll & Section Navigation",
+    "Brand-Accurate Styling & High-Res Food Asset Showcase"
+  ],
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "Responsive Design",
+    "DOM Manipulation",
+    "Git & GitHub Pages"
+  ],
+  year: "2025",
+  role: "Frontend Developer",
+  client: "Personal Project",
+  duration: "3 Weeks",
+  status: "Completed",
+  color: "#E4002B",
+  results: [
+    "Faithful replication of the iconic KFC digital ordering experience",
+    "Lightweight, fast-loading vanilla JavaScript architecture",
+    "Seamless multi-device responsiveness and mobile touch navigation",
+    "Hosted live on GitHub Pages"
+  ]
+},
+
 {
   slug: "zelord-travels",
   title: "Zelord Travel",

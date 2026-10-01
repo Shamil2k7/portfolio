@@ -43,6 +43,11 @@ export default function Hero() {
       id="top"
       className="relative w-full h-screen min-h-[720px] overflow-hidden pt-28"
     >
+      {/* Primary Semantic Heading for Google & Search Crawlers */}
+      <h1 className="sr-only">
+        Shamil K — Full Stack Developer &amp; Software Engineer | shamilk.in
+      </h1>
+
       {/* Marquee */}
       <div className="absolute inset-0 flex flex-col justify-center gap-2 opacity-90">
         <MarqueeRow words="web Developer · WEB DESIGN · " />
@@ -73,7 +78,7 @@ export default function Hero() {
         <div className="relative w-[280px] md:w-[360px] aspect-[3/4] torn-mask grain shadow-2xl overflow-hidden">
           <Image
             src="/heroimage.png"
-            alt="Shamil K"
+            alt="Shamil K — Full Stack Developer"
             fill
             priority
             className="object-cover"
