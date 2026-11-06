@@ -274,6 +274,79 @@ export const projects: Project[] = [
   ]
 },
 {
+  slug: "pullmate-git-companion",
+
+  title: "PullMate — Git Companion",
+
+  subtitle: "A Smart Windows Desktop Companion for GitHub Repository Monitoring",
+
+  image: "/pullmate.png",
+
+  github: "https://github.com/Shamil2k7/pullmate",
+
+  demo: "https://pullmate-website.vercel.app/",
+
+  overview:
+    "PullMate is a Windows desktop application designed to help developers stay updated with their GitHub repositories. Featuring a friendly floating companion character, the application monitors local repositories for remote changes and provides timely desktop notifications when updates are available. Developers can connect their GitHub account, select repositories to track, clone new projects, or link existing local repositories, making repository management more convenient and accessible.",
+
+  challenge:
+    "Developing a lightweight desktop companion that integrates GitHub authentication, local Git repositories, remote update detection, Windows startup behavior, and desktop notifications while maintaining secure credential handling and a seamless user experience.",
+
+  solution:
+    "Developed using Electron, React, and Vite with JavaScript. Integrated GitHub authorization and Git operations to manage repository connections, fetch remote updates, and detect changes between local and remote branches. Implemented a floating desktop companion interface, Windows notifications, repository management workflows, and configurable startup behavior. Used Electron's main and renderer process architecture with preload APIs for controlled access to desktop functionality.",
+
+  features: [
+    "GitHub Account Authorization",
+    "GitHub Repository Discovery and Selection",
+    "Local Git Repository Integration",
+    "Repository Cloning and Management",
+    "Remote Change Detection Using Git Fetch",
+    "Local and Remote Branch Status Monitoring",
+    "Floating Animated Desktop Companion",
+    "Windows Desktop Notifications",
+    "User-Controlled Git Pull Operations",
+    "Automatic Application Startup Configuration",
+    "Reminder Scheduling and Snooze Options",
+    "Repository Status Monitoring",
+    "Secure Desktop Application Architecture",
+    "Windows Installer Packaging"
+  ],
+
+  tech: [
+    "Electron",
+    "React",
+    "JavaScript",
+    "Vite",
+    "Node.js",
+    "Git CLI",
+    "GitHub REST API",
+    "Electron IPC",
+    "Electron Builder",
+    "CSS"
+  ],
+
+  year: "2026",
+
+  role: "Full Stack Developer",
+
+  client: "Personal Project",
+
+  duration: "Ongoing",
+
+  status: "In Development",
+
+  color: "#23865B",
+
+  results: [
+    "Developed a cross-platform web technology-based Windows desktop application",
+    "Integrated GitHub repository discovery and local repository management",
+    "Implemented remote update detection through Git operations",
+    "Created a floating companion-based desktop user experience",
+    "Designed a user-controlled workflow for managing repository updates",
+    "Prepared the application for Windows installer distribution"
+  ]
+},
+{
   slug: "selfmony-personal-finance-tracker",
   title: "SelfMony — Personal Finance Tracker",
   subtitle: "Minimalist Personal Finance & Expense Budgeting Application",

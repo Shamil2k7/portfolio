@@ -2,16 +2,24 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Code, ChevronDown } from "lucide-react";
+import { ExternalLink, Code, ChevronDown, ArrowRight } from "lucide-react";
 import { projects } from "@/app/data/projects";
 
-export default function Projects() {
+interface ProjectsProps {
+  limit?: number;
+  showViewAll?: boolean;
+}
+
+export default function Projects({ limit = 6, showViewAll = true }: ProjectsProps = {}) {
   const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
 
   const toggleDetails = (slug: string) => {
     setExpandedSlug((prev) => (prev === slug ? null : slug));
   };
+
+  const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
   return (
     <section id="projects" className="py-28 px-6 md:px-12 scroll-mt-20">
@@ -38,20 +46,38 @@ export default function Projects() {
             </motion.h2>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-neutral-600 max-w-md text-base md:text-lg leading-relaxed"
-          >
-            Explore my selected work across modern web applications, full-stack systems, and digital platforms.
-          </motion.p>
+          <div className="flex flex-col md:items-end gap-3">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="text-neutral-600 max-w-md text-base md:text-lg leading-relaxed md:text-right"
+            >
+              Explore my selected work across modern web applications, full-stack systems, and digital platforms.
+            </motion.p>
+            {showViewAll && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
+                <Link
+                  href="/projects"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-neutral-900 hover:text-neutral-600 transition-colors group"
+                >
+                  <span>View all {projects.length} projects</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </Link>
+              </motion.div>
+            )}
+          </div>
         </div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-start">
-          {projects.map((project, index) => {
+          {displayedProjects.map((project, index) => {
             const isExpanded = expandedSlug === project.slug;
 
             return (
@@ -213,6 +239,28 @@ export default function Projects() {
             );
           })}
         </div>
+
+        {/* Show All Projects CTA Button */}
+        {showViewAll && projects.length > displayedProjects.length && (
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-16 sm:mt-20 flex flex-col sm:flex-row items-center justify-center gap-4 text-center"
+          >
+            <Link
+              href="/projects"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-black text-white text-sm sm:text-base font-medium hover:bg-neutral-800 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-2xl"
+            >
+              <span>Show All Projects</span>
+              <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-mono">
+                {projects.length} Total
+              </span>
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
+        )}
       </div>
     </section>
   );
