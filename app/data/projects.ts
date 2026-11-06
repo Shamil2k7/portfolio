@@ -75,6 +75,85 @@ export const projects: Project[] = [
   ]
 },
 {
+  slug: "classdesk-school-management-saas",
+
+  title: "ClassDesk — School & Tuition Management SaaS",
+
+  subtitle: "Multi-Tenant School and Tuition Centre Management Platform",
+
+  image: "/classdesk.png",
+
+  github: "https://github.com/Shamil2k7/ClassDesk.git",
+
+  demo: "https://class-desk-mu.vercel.app/",
+
+  overview:
+    "ClassDesk is a multi-tenant school and tuition management SaaS platform designed to simplify academic and administrative operations for educational institutions. The platform provides dedicated dashboards for institute administrators, teachers, parents, and super administrators, enabling centralized management of students, attendance, fees, examinations, report cards, timetables, online classes, and announcements. Built with institute-level data isolation, role-based access control, and a responsive PWA experience, ClassDesk helps educational institutions manage their daily operations through a unified digital platform.",
+
+  challenge:
+    "Developing a scalable multi-tenant education management platform that supports multiple independent institutions while maintaining secure data isolation, role-based permissions, and seamless communication between administrators, teachers, and parents. The platform also required integrating attendance management, fee collection, academic reporting, online learning, and mobile-friendly experiences into a unified system.",
+
+  solution:
+    "Developed using Next.js App Router, React, TypeScript, Tailwind CSS, and Supabase with PostgreSQL Row Level Security (RLS). Implemented role-based dashboards, institute-specific data management, student attendance tracking, fee management with Razorpay integration, examination and report card modules, online classes, and parent notifications. Integrated Firebase Cloud Messaging, PWA capabilities, and multilingual support to provide an accessible experience across devices.",
+
+  features: [
+    "Multi-Tenant School & Tuition Centre Management",
+    "Role-Based Dashboards (Super Admin, Institute Admin, Teacher, Parent)",
+    "Student, Teacher & Parent Management",
+    "Student Attendance Tracking & Parent Absent Alerts",
+    "Fee Management & Razorpay Payment Integration",
+    "Cash Payment Recording & Fee Tracking",
+    "Examination, Grades & Report Card Management",
+    "Class Timetable & Scheduling",
+    "Online Classes with Zoom Integration",
+    "Notes, Announcements & Academic Updates",
+    "Parent OTP Authentication & Multi-Child Switching",
+    "Super Admin Institute Management",
+    "PostgreSQL Row Level Security for Tenant Isolation",
+    "Firebase Cloud Messaging Notifications",
+    "English, Malayalam & Hindi Language Support",
+    "Progressive Web App (PWA) & Capacitor Integration",
+    "Responsive Mobile, Tablet & Desktop Interface"
+  ],
+
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Supabase",
+    "PostgreSQL",
+    "Row Level Security (RLS)",
+    "Razorpay",
+    "Firebase Cloud Messaging",
+    "Zoom API",
+    "Capacitor",
+    "PWA",
+    "jsPDF"
+  ],
+
+  year: "2026",
+
+  role: "Full Stack Developer",
+
+  client: "ClassDesk",
+
+  duration: "Ongoing",
+
+  status: "In Development",
+
+  color: "#2563EB",
+
+  results: [
+    "Developed a centralized SaaS platform for managing multiple educational institutions",
+    "Implemented role-based access for administrators, teachers, parents, and super administrators",
+    "Designed institute-level database isolation using PostgreSQL Row Level Security",
+    "Integrated online fee payments and academic management workflows",
+    "Built a responsive, multilingual experience with PWA support",
+    "Created a unified platform for attendance, examinations, fees, and parent communication"
+  ]
+},
+{
   slug: "hso-product-sales-stock-erp",
   title: "HSO Product Sales & Stock ERP",
   subtitle: "Production-Ready Inventory ERP & Sales POS Management System",
